@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export const Main = styled.div`
   .second{
-    background-image: linear-gradient(135deg,rgba(112, 41, 225, 0.6), rgba(255, 147, 102, 0.6)),url(${bgImg});
+    background-image: linear-gradient(135deg,rgba(82, 41, 80, 0.8), rgba(130, 197, 90, 0.6)),url(${bgImg});
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ export const Main = styled.div`
 
 export const Section = styled.section`
   position:relative;
-` 
+`
 
 export const Sticky = styled(motion.div)`
   height:100vh;

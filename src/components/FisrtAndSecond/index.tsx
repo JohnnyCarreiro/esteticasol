@@ -2,10 +2,10 @@ import React from 'react'
 import { motion, useTransform, useViewportScroll } from 'framer-motion'
 // import { Sticky } from 'styles/index'
 import bgImg  from 'assets/images/bg.jpg'
-import rocketIMG from 'assets/images/rocket.png'
+import aboutIMG from 'assets/images/main_logo.svg'
 import { Container,Sticky } from './styles'
 
-// import { Container } from './styles' 
+// import { Container } from './styles'
 
 const FisrtAndSecond: React.FC = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -14,7 +14,7 @@ const FisrtAndSecond: React.FC = () => {
   return (
       <Sticky className='second' >
           <First />
-          <motion.div 
+          <motion.div
             style={{
               position:'absolute',
               top:0,
@@ -71,13 +71,13 @@ const First:React.FC = () => {
     )
   return (
     <Container>
-      <Sticky 
+      <Sticky
       className='fisrt'
       style={{
         scale: firstScale,
         borderRadius: firstRadius,
         fontSize:firstFontScale,
-        color:'#fff'
+        color:'#eedeed'
       }}
      >
        <motion.div className="offset"
@@ -88,18 +88,18 @@ const First:React.FC = () => {
         <div className="main-hero">
           <div className='hero-container'>
             <div className="hero-content">
-              <h1>Sua empresa faz negócios on-line, ou esta fora dos negócios?</h1>
+              <h1>Algum Título</h1>
               <p>
-              Com o mundo cada vez mais globalizado, não ter uma presença digital seria o mesmo que abrir sua empresa em meio ao deserto. 
+                Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis! Casamentiss faiz malandris se pirulitá.
               </p>
             </div>
           </div>
           <div className="a">
-            <motion.div 
+            <motion.div
               className="bg-a"
               style={{
-                backgroundImage: `linear-gradient(135deg,rgba(112, 41, 225, 0.6), rgba(255, 147, 102, 0.6)),url(${bgImg})`, 
-                backgroundSize:'cover', 
+                backgroundImage: `linear-gradient(135deg,rgba(82, 41, 80, 0.8), rgba(130, 197, 90, 0.6)),url(${bgImg})`,
+                backgroundSize:'cover',
                 backgroundPosition:'center',
                 backgroundRepeat: 'no-repeat',
                 filter: 'blur(4px)',
@@ -117,19 +117,23 @@ const First:React.FC = () => {
                   height: leftSideHeight
                 }}
               >
-                <motion.div 
+                <motion.div
                   className="left-content"
                   style={{
                     opacity:leftSidetextOpacity,
                     color:'#fff',
                   }}
                 >
-                  <h1>De volta ao Jogo</h1>
-                  <p>Saiba como sua empresa pode ter resultados excelente com uma administração mais eficiente e com estratégias que farão você voltar aos business</p>
-                  <h1>Sobre a connect</h1>
-                  <p>Somos uma empresa de consultoria e desenvolvimento de soluções para organização, fluxo de informações e gestão de processos administrativos, comerciais, financeiros e marketing para empresas.</p>
+                  <h1>Algum Título</h1>
+                  <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis! Casamentiss faiz malandris se pirulitá.
+                  </p>
+                  <h1>Sobre a Sol</h1>
+                  <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis! Casamentiss faiz malandris se pirulitá.
+                  </p>
                 </motion.div>
-              </motion.div> 
+              </motion.div>
             <div className="right-side">
               <motion.div
                 className='right-image'
@@ -138,7 +142,7 @@ const First:React.FC = () => {
                   scale: rightSideScale,
                 }}
               >
-                <img src={rocketIMG} alt="Rocket"/>
+                <img src={aboutIMG} alt="Rocket"/>
               </motion.div>
             </div>
           </div>

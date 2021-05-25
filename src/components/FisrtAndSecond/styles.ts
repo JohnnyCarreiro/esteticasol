@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 
@@ -32,7 +32,7 @@ export const Container = styled.div`
       width:50%;
       @media (max-width: 1024px) {
         padding:0 24px 0 24px;
-        width:100%; 
+        width:100%;
       }
     }
     .hero-content{
@@ -41,6 +41,11 @@ export const Container = styled.div`
       max-width:512px;
       width:100%;
       margin: 0 124px 0 auto;
+      padding: 1rem;
+
+      > h1 {
+        margin-bottom: .75rem;
+      }
     }
     .a{
       position:absolute;
@@ -68,6 +73,13 @@ export const Container = styled.div`
         width:100%;
         margin: 0 24px 0 auto;
 
+        > h1 {
+          margin-bottom: .75rem;
+        }
+        > p {
+          margin-bottom: 1rem;
+        }
+
       }
       .right-side{
         width:50%;
@@ -85,11 +97,8 @@ export const Container = styled.div`
           align-items:flex-start;
           width:100%;
           height:100%;
-          img{
-              transform:rotate(45deg)
-          }
         }
-        
+
       }
     }
     .b{
@@ -108,7 +117,7 @@ export const Container = styled.div`
       height:100%;
     }
   }
- 
+
 `
 export const Sticky = styled(motion.div)`
   height:100vh;
