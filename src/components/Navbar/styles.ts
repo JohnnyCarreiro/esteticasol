@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.header`
     position: relative;
@@ -7,7 +7,7 @@ export const Container = styled.header`
     background-color: transparent;
     width: 100%;
     z-index: 1000;
-        
+
     .overlay{
         position: absolute;
         width: 100%;
@@ -24,12 +24,21 @@ export const Container = styled.header`
         margin: 0 auto;
         display: flex;
         position: relative;
+        justify-content: space-between;
     }
 
     .logo-container{
         flex: 1;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        height: 48px;
+        max-height: 48px;
+
+        > a > .logo {
+          height: 48px;
+        }
+
     }
 
     .nav-btn{
@@ -49,18 +58,6 @@ export const Container = styled.header`
         flex: 1;
     }
 
-    .logo{
-        color: #fff;
-        font-size: 1.1rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        line-height: 3rem;
-    }
-
-    .logo span{
-        font-weight: 300;
-    }
 
     .btn{
         display: inline-block;
@@ -330,7 +327,7 @@ export const Container = styled.header`
             background-color: ${({theme})=>theme.color.gray_300};
             display: none;
         }
-        
+
         .nav-link:hover > .dropdown,
         .dropdown-link:hover > .dropdown{
             display: block;
@@ -404,4 +401,4 @@ export const Container = styled.header`
             transform: translateY(15px);
         }
     }
-`;
+`

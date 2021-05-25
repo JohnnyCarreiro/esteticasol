@@ -1,8 +1,9 @@
-import Navbar from 'components/Navbar';
-import { useTransform, useViewportScroll } from 'framer-motion';
-import React from 'react';
+import React from 'react'
+import { useTransform, useViewportScroll } from 'framer-motion'
 
-import { Container } from './styles';
+import Navbar from 'components/Navbar'
+
+import { Container } from './styles'
 
 const Header: React.FC = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -27,7 +28,7 @@ const Header: React.FC = () => {
         <Navbar/>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

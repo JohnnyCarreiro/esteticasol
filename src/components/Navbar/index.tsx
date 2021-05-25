@@ -1,6 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
 import { FaCaretDown } from 'react-icons/fa'
-
 
 import { Container } from './styles'
 
@@ -9,9 +9,18 @@ const Navbar: React.FC = () => {
     <Container>
       <div className="container">
               <input type="checkbox" name="" id="check" />
-              
+
               <div className="logo-container">
-                  <a href="/"><h3 className="logo">CONNECT<span>GDN</span></h3></a>
+                  <a href="/">
+                    <Image
+                      alt={'Sol Logo'}
+                      className="logo"
+                      src="/images/logos/secondary.svg"
+                      width={109.5}
+                      height={48}
+                      priority
+                    />
+                  </a>
               </div>
 
               <div className="nav-btn">
@@ -25,7 +34,7 @@ const Navbar: React.FC = () => {
                               <div className="dropdown">
                                   <ul>
                                       <li className="dropdown-link">
-                                          <a href="/sobre">A PHD</a>
+                                          <a>A PHD</a>
                                       </li>
                                       <li className="dropdown-link">
                                           <a>Parceiros <FaCaretDown /></a>
@@ -118,7 +127,7 @@ const Navbar: React.FC = () => {
               </div>
           </div>
     </Container>
-  );
-};
+  )
+}
 
 export default Navbar
