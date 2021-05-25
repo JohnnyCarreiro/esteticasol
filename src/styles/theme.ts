@@ -1,26 +1,26 @@
 const defaultTheme = {
-    color:{
-        gray_100: '#000000',
-        gray_200: '#161A20',
-        gray_300: '#2D3540',
-        gray_400: '#434F60',
-        gray_500: '#5A697F',
-        gray_600: '#7B8799',
-        gray_700: '#9CA5B3',
-        gray_800: '#BDC3CC',
-        gray_900: '#DEE1E6',
-        gray_1000: '#F7FAFF',
-        orange_hover: '#8C5B13',
-        alert_hover: '#8C2B1B',
-        blue_primary: '#3965A9',
-        blue_hover: '#3E5E8C',
-        blue_secondary: '#294266',
-        blue_darken: '#152133',
-        default: '#6BA2F6',
-        alert: '#C34124',
-        yallow_primary: '#d31e45',
-        orange_primary: '#E2981D',
-    },
+  color:{
+    gray_100: '#3d363c',
+    gray_200: '#534d54',
+    gray_300: '#676069',
+    gray_400: '#79727c',
+    gray_500: '#8b838e',
+    gray_600: '#9e94a0',
+    gray_700: '#c5b8c6',
+    gray_800: '#d9cad8',
+    gray_900: '#eedeed',
+    gray_1000: '#f7ebf7',
+
+    primary: '#522950',
+    secondary: '#82c55a',
+
+    alerts: {
+      default: '#9f4198',
+      success: '#dd59a0',
+      danger: '#b22d59'
+    }
+  },
+
 }
 
 export type ThemeType = typeof defaultTheme
