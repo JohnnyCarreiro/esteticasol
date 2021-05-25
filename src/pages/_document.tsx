@@ -36,6 +36,8 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
           {/* <link rel="icon" href="#" /> */}
         </Head>
           <body>
