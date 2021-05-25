@@ -2,8 +2,7 @@ import React from 'react'
 // import Link from 'next/link'
 import FirstAndSecond from 'components/FisrtAndSecond'
 import { Main, Section, Sticky } from 'styles/index'
-import Header from 'components/Header'
-import Footer from 'components/Footer'
+
 
 const IndexPage = () => {
   React.useEffect(()=>{
@@ -12,8 +11,7 @@ const IndexPage = () => {
   )
   return (
     <>
-      <Header/>
-      <Main 
+      <Main
         style={{
           minHeight:'1610vh',
           height: '1610vh'
@@ -45,12 +43,9 @@ const IndexPage = () => {
         <h1>text</h1>
 
       </Main>
-
-      <Footer/>
     </>
   )
-  
+
 }
-  
+
   export default IndexPage
-  
